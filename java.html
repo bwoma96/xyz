@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Example</title>
+</head>
+<body>
+    <p id="text">now</p>
+    <input type="text" id="userInput" placeholder="Enter new text">
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            var newText = document.getElementById('userInput').value;
+            document.getElementById('text').innerText = newText;
+        }
+    </script>
+</body>
+</html>
